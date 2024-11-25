@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover, .dropdown:hover .dropdown-content {
+    background-color: #c1272d;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #c1272d;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.slider {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider img {
+    width: 100%;
+}
+
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(128, 128, 128, 0.7);
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+.slider-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.slider-overlay h3 {
+    font-size: 18px;
+    background-color: #c1272d;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.slider-overlay p {
+    font-size: 18px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.info div {
+    width: 30%;
+}
+
+.info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 14px;
+    color: #666;
+}
+
+.news a, .newsletter a {
+    color: #c1272d;
+    text-decoration: none;
+    font-size: 14px;
+}
